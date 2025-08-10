@@ -1,0 +1,72 @@
+IF DB_ID('DWGlobalSales') IS NULL
+    CREATE DATABASE DWGlobalSales;
+GO
+
+USE DWGlobalSales;
+GO
+
+-- DimDate
+-- Dimension de tiempo con atributos descriptivos
+CREATE TABLE dbo.DimDate (
+    dateKey         INT         NOT NULL PRIMARY KEY,
+    fullDate        DATE        NOT NULL,
+    dayOfMonth      TINYINT     NOT NULL,
+    dayOfWeekName   VARCHAR(10) NOT NULL,
+    monthNumber     TINYINT     NOT NULL,
+    monthName       VARCHAR(10) NOT NULL,
+    calendarYear    SMALLINT    NOT NULL
+);
+GO
+
+-- DimProduct
+-- Dimension de producto con campos diferentes, manteniendo la lógica de SCD Tipo 2
+CREATE TABLE dbo.DimProduct (
+    productKey      INT IDENTITY(1,1) PRIMARY KEY,
+    productID       INT             NOT NULL,
+    itemCode        VARCHAR(50)     NULL,
+    itemName        VARCHAR(200)    NULL,
+    brandName       VARCHAR(100)    NULL,
+    itemType        VARCHAR(50)     NULL,
+    price           DECIMAL(18,2)   NULL,
+    effectiveFrom   DATE            NOT NULL DEFAULT (CAST(GETDATE() AS date)),
+    effectiveTo     DATE            NOT NULL DEFAULT ('9999-12-31'),
+    isCurrent       BIT             NOT NULL DEFAULT (1)
+);
+GO
+
+-- DimGeography
+-- Dimension de geografía con campos de ubicación diferentes, manteniendo la lógica de SCD Tipo 2
+CREATE TABLE dbo.DimGeography (
+    geographyKey        INT IDENTITY(1,1) PRIMARY KEY,
+    locationID          INT           NOT NULL,
+    city                VARCHAR(100)  NOT NULL,
+    country             VARCHAR(100)  NOT NULL,
+    continent           VARCHAR(100)  NULL,
+    effectiveFrom       DATE          NOT NULL DEFAULT (CAST(GETDATE() AS date)),
+    effectiveTo         DATE          NOT NULL DEFAULT ('9999-12-31'),
+    isCurrent           BIT           NOT NULL DEFAULT (1)
+);
+GO
+
+-- FactSales
+-- Tabla de hechos de ventas con medidas y claves foráneas actualizadas
+CREATE TABLE dbo.FactSales (
+    saleDateKey         INT             NOT NULL,
+    deliveryDateKey     INT             NOT NULL,
+    productKey          INT             NOT NULL,
+    geographyKey        INT             NOT NULL,
+    invoiceNumber       VARCHAR(50)     NOT NULL,
+    promoCode           VARCHAR(50)     NULL,
+    soldQuantity        INT             NOT NULL,
+    unitCost            DECIMAL(19,4)   NOT NULL,
+    totalDiscount       DECIMAL(19,4)   NOT NULL,
+    totalSales          DECIMAL(19,4)   NOT NULL,
+    shippingCost        DECIMAL(19,4)   NOT NULL,
+
+    CONSTRAINT FK_FactSales_SaleDate       FOREIGN KEY (saleDateKey)       REFERENCES dbo.DimDate(dateKey),
+    CONSTRAINT FK_FactSales_DeliveryDate   FOREIGN KEY (deliveryDateKey)   REFERENCES dbo.DimDate(dateKey),
+    CONSTRAINT FK_FactSales_Product        FOREIGN KEY (productKey)        REFERENCES dbo.DimProduct(productKey),
+    CONSTRAINT FK_FactSales_Geography      FOREIGN KEY (geographyKey)      REFERENCES dbo.DimGeography(geographyKey)
+);
+GO
+
