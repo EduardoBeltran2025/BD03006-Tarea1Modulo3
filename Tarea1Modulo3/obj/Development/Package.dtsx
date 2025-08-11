@@ -1,4 +1,4 @@
-﻿<?xml version="1.0"?>
+<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
   DTS:CreationDate="8/10/2025 11:36:45 AM"
@@ -11,8 +11,8 @@
   DTS:LocaleID="17418"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="17"
-  DTS:VersionGUID="{833FE699-C9F6-436E-B3C1-B25F2FECB540}">
+  DTS:VersionBuild="16"
+  DTS:VersionGUID="{B5A99ED7-51D5-4ABD-9119-EF82BB2F5A62}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -590,7 +590,7 @@
         <NodeLayout
           Size="226,42"
           Id="Package\cargar excel en base de datos"
-          TopLeft="17,36" />
+          TopLeft="110,35" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
