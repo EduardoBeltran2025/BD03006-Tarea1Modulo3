@@ -1,0 +1,715 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="8/10/2025 9:59:47 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="LAPTOP-TI0VVRBR"
+  DTS:CreatorName="LAPTOP-TI0VVRBR\beltr"
+  DTS:DTSID="{A6A5227B-D9FE-48FE-9030-0CFC0F8B2B31}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5685.2"
+  DTS:LocaleID="17418"
+  DTS:ObjectName="Package1"
+  DTS:PackageType="5"
+  DTS:VersionBuild="6"
+  DTS:VersionGUID="{C5FC01B9-F304-4D1D-B62B-77A24862549A}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LAPTOP-TI0VVRBR\MSSQLSERVER01]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{85831653-1620-4C19-81BE-C98F036812B8}"
+      DTS:ObjectName="LAPTOP-TI0VVRBR\MSSQLSERVER01">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=LAPTOP-TI0VVRBR\MSSQLSERVER01;Initial Catalog=TailspinToys2020-US;Integrated Security=True;Application Name=SSIS-Package1-{85831653-1620-4C19-81BE-C98F036812B8}LAPTOP-TI0VVRBR\MSSQLSERVER01;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LAPTOP-TI0VVRBR\MSSQLSERVER01 1]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{8F6C21A1-F1AA-4617-B5FB-A4CDAA8D0247}"
+      DTS:ObjectName="LAPTOP-TI0VVRBR\MSSQLSERVER01 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=LAPTOP-TI0VVRBR\MSSQLSERVER01;Integrated Security=True;Application Name=SSIS-Package1-{8F6C21A1-F1AA-4617-B5FB-A4CDAA8D0247}LAPTOP-TI0VVRBR\MSSQLSERVER01 1;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LAPTOP-TI0VVRBR\MSSQLSERVER01 2]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{E61585D4-9CE0-4A7B-BA0D-A3C62349EE5E}"
+      DTS:ObjectName="LAPTOP-TI0VVRBR\MSSQLSERVER01 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=LAPTOP-TI0VVRBR\MSSQLSERVER01;Integrated Security=True;Application Name=SSIS-Package1-{E61585D4-9CE0-4A7B-BA0D-A3C62349EE5E}LAPTOP-TI0VVRBR\MSSQLSERVER01 2;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LAPTOP-TI0VVRBR\MSSQLSERVER01 3]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{92FFD8DB-FC34-40DF-9CC1-D1BB15FFAEB3}"
+      DTS:ObjectName="LAPTOP-TI0VVRBR\MSSQLSERVER01 3">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=LAPTOP-TI0VVRBR\MSSQLSERVER01;Integrated Security=True;Application Name=SSIS-Package1-{92FFD8DB-FC34-40DF-9CC1-D1BB15FFAEB3}LAPTOP-TI0VVRBR\MSSQLSERVER01 3;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LAPTOP-TI0VVRBR\MSSQLSERVER01.DWGlobalSales]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{16091586-D1F8-4CDA-869C-BE60B8C17A4E}"
+      DTS:ObjectName="LAPTOP-TI0VVRBR\MSSQLSERVER01.DWGlobalSales">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=LAPTOP-TI0VVRBR\MSSQLSERVER01;Initial Catalog=DWGlobalSales;Integrated Security=True;Application Name=SSIS-Package1-{16091586-D1F8-4CDA-869C-BE60B8C17A4E}LAPTOP-TI0VVRBR\MSSQLSERVER01.DWGlobalSales;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LAPTOP-TI0VVRBR\MSSQLSERVER01.DWGlobalSales1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{5689D639-ABA0-4B91-8154-7998A00BBB8C}"
+      DTS:ObjectName="LAPTOP-TI0VVRBR\MSSQLSERVER01.DWGlobalSales1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=LAPTOP-TI0VVRBR\MSSQLSERVER01;Initial Catalog=DWGlobalSales;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{5689D639-ABA0-4B91-8154-7998A00BBB8C}LAPTOP-TI0VVRBR\MSSQLSERVER01.DWGlobalSales1;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LAPTOP-TI0VVRBR\MSSQLSERVER01.TailspinToys2020-US]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{9770DC0C-B458-4AF7-AA02-F1E4CF833FB1}"
+      DTS:ObjectName="LAPTOP-TI0VVRBR\MSSQLSERVER01.TailspinToys2020-US">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=LAPTOP-TI0VVRBR\MSSQLSERVER01;Initial Catalog=TailspinToys2020-US;Integrated Security=True;Application Name=SSIS-Package1-{9770DC0C-B458-4AF7-AA02-F1E4CF833FB1}LAPTOP-TI0VVRBR\MSSQLSERVER01.TailspinToys2020-US;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Limpiar DimProducto"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{A556FE97-7FB8-4E07-A938-21ECA6588ADE}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Limpiar DimProducto"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{5689D639-ABA0-4B91-8154-7998A00BBB8C}"
+          SQLTask:SqlStatementSource="Delete DimProduct&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\llenar DimProducto"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{4EBC47A0-D4B1-4530-8B5F-DD606DE21610}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="llenar DimProducto"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\llenar DimProducto\DimProduct"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
+              description="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination."
+              name="DimProduct"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="The Destination database table name."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">"dbo"."DimProduct"</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specify the number of rows per batch. The default is 0 which uses the same size as SSIS internal buffer. "
+                  expressionType="Notify"
+                  name="BatchSize">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out. A value of 0 indicates infinite time-out. "
+                  expressionType="Notify"
+                  name="CommandTimeout">30</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether to use the SqlBulkCopy interface to improve the performance of bulk insert operations. Only certain providers support this interface."
+                  expressionType="Notify"
+                  name="UseBulkInsertWhenPossible">true</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.ADONETDestination</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\llenar DimProducto\DimProduct.Connections[IDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[LAPTOP-TI0VVRBR\MSSQLSERVER01.DWGlobalSales]"
+                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-TI0VVRBR\MSSQLSERVER01.DWGlobalSales]"
+                  description="Managed connection manager"
+                  name="IDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\llenar DimProducto\DimProduct.Inputs[ADO NET Destination Input]"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="ADO NET Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\llenar DimProducto\DimProduct.Inputs[ADO NET Destination Input].Columns[ProductID]"
+                      cachedDataType="i4"
+                      cachedName="ProductID"
+                      externalMetadataColumnId="Package\llenar DimProducto\DimProduct.Inputs[ADO NET Destination Input].ExternalColumns[productID]"
+                      lineageId="Package\llenar DimProducto\leer product.Outputs[ADO NET Source Output].Columns[ProductID]" />
+                    <inputColumn
+                      refId="Package\llenar DimProducto\DimProduct.Inputs[ADO NET Destination Input].Columns[ProductName]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="ProductName"
+                      externalMetadataColumnId="Package\llenar DimProducto\DimProduct.Inputs[ADO NET Destination Input].ExternalColumns[itemName]"
+                      lineageId="Package\llenar DimProducto\leer product.Outputs[ADO NET Source Output].Columns[ProductName]" />
+                    <inputColumn
+                      refId="Package\llenar DimProducto\DimProduct.Inputs[ADO NET Destination Input].Columns[KitType]"
+                      cachedDataType="wstr"
+                      cachedLength="3"
+                      cachedName="KitType"
+                      externalMetadataColumnId="Package\llenar DimProducto\DimProduct.Inputs[ADO NET Destination Input].ExternalColumns[itemCode]"
+                      lineageId="Package\llenar DimProducto\leer product.Outputs[ADO NET Source Output].Columns[KitType]" />
+                    <inputColumn
+                      refId="Package\llenar DimProducto\DimProduct.Inputs[ADO NET Destination Input].Columns[ProductSKU]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="ProductSKU"
+                      externalMetadataColumnId="Package\llenar DimProducto\DimProduct.Inputs[ADO NET Destination Input].ExternalColumns[brandName]"
+                      lineageId="Package\llenar DimProducto\leer product.Outputs[ADO NET Source Output].Columns[ProductSKU]" />
+                    <inputColumn
+                      refId="Package\llenar DimProducto\DimProduct.Inputs[ADO NET Destination Input].Columns[CustomerStateID]"
+                      cachedDataType="i4"
+                      cachedName="CustomerStateID"
+                      externalMetadataColumnId="Package\llenar DimProducto\DimProduct.Inputs[ADO NET Destination Input].ExternalColumns[itemType]"
+                      lineageId="Package\llenar DimProducto\leer product.Outputs[ADO NET Source Output].Columns[CustomerStateID]" />
+                    <inputColumn
+                      refId="Package\llenar DimProducto\DimProduct.Inputs[ADO NET Destination Input].Columns[RetailPrice]"
+                      cachedDataType="cy"
+                      cachedName="RetailPrice"
+                      externalMetadataColumnId="Package\llenar DimProducto\DimProduct.Inputs[ADO NET Destination Input].ExternalColumns[price]"
+                      lineageId="Package\llenar DimProducto\leer product.Outputs[ADO NET Source Output].Columns[RetailPrice]" />
+                    <inputColumn
+                      refId="Package\llenar DimProducto\DimProduct.Inputs[ADO NET Destination Input].Columns[OrderDate]"
+                      cachedDataType="dbDate"
+                      cachedName="OrderDate"
+                      externalMetadataColumnId="Package\llenar DimProducto\DimProduct.Inputs[ADO NET Destination Input].ExternalColumns[effectiveFrom]"
+                      lineageId="Package\llenar DimProducto\leer product.Outputs[ADO NET Source Output].Columns[OrderDate]" />
+                    <inputColumn
+                      refId="Package\llenar DimProducto\DimProduct.Inputs[ADO NET Destination Input].Columns[ShipDate]"
+                      cachedDataType="dbDate"
+                      cachedName="ShipDate"
+                      externalMetadataColumnId="Package\llenar DimProducto\DimProduct.Inputs[ADO NET Destination Input].ExternalColumns[effectiveTo]"
+                      lineageId="Package\llenar DimProducto\leer product.Outputs[ADO NET Source Output].Columns[ShipDate]" />
+                    <inputColumn
+                      refId="Package\llenar DimProducto\DimProduct.Inputs[ADO NET Destination Input].Columns[Quantity]"
+                      cachedDataType="i4"
+                      cachedName="Quantity"
+                      externalMetadataColumnId="Package\llenar DimProducto\DimProduct.Inputs[ADO NET Destination Input].ExternalColumns[isCurrent]"
+                      lineageId="Package\llenar DimProducto\leer product.Outputs[ADO NET Source Output].Columns[Quantity]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\llenar DimProducto\DimProduct.Inputs[ADO NET Destination Input].ExternalColumns[productKey]"
+                      dataType="i4"
+                      name="productKey" />
+                    <externalMetadataColumn
+                      refId="Package\llenar DimProducto\DimProduct.Inputs[ADO NET Destination Input].ExternalColumns[productID]"
+                      dataType="i4"
+                      name="productID" />
+                    <externalMetadataColumn
+                      refId="Package\llenar DimProducto\DimProduct.Inputs[ADO NET Destination Input].ExternalColumns[itemCode]"
+                      dataType="wstr"
+                      length="50"
+                      name="itemCode" />
+                    <externalMetadataColumn
+                      refId="Package\llenar DimProducto\DimProduct.Inputs[ADO NET Destination Input].ExternalColumns[itemName]"
+                      dataType="wstr"
+                      length="200"
+                      name="itemName" />
+                    <externalMetadataColumn
+                      refId="Package\llenar DimProducto\DimProduct.Inputs[ADO NET Destination Input].ExternalColumns[brandName]"
+                      dataType="wstr"
+                      length="100"
+                      name="brandName" />
+                    <externalMetadataColumn
+                      refId="Package\llenar DimProducto\DimProduct.Inputs[ADO NET Destination Input].ExternalColumns[itemType]"
+                      dataType="wstr"
+                      length="50"
+                      name="itemType" />
+                    <externalMetadataColumn
+                      refId="Package\llenar DimProducto\DimProduct.Inputs[ADO NET Destination Input].ExternalColumns[price]"
+                      dataType="numeric"
+                      name="price"
+                      precision="18"
+                      scale="2" />
+                    <externalMetadataColumn
+                      refId="Package\llenar DimProducto\DimProduct.Inputs[ADO NET Destination Input].ExternalColumns[effectiveFrom]"
+                      dataType="dbTimeStamp"
+                      name="effectiveFrom" />
+                    <externalMetadataColumn
+                      refId="Package\llenar DimProducto\DimProduct.Inputs[ADO NET Destination Input].ExternalColumns[effectiveTo]"
+                      dataType="dbTimeStamp"
+                      name="effectiveTo" />
+                    <externalMetadataColumn
+                      refId="Package\llenar DimProducto\DimProduct.Inputs[ADO NET Destination Input].ExternalColumns[isCurrent]"
+                      dataType="bool"
+                      name="isCurrent" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\llenar DimProducto\DimProduct.Outputs[ADO NET Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="ADO NET Destination Error Output"
+                  synchronousInputId="Package\llenar DimProducto\DimProduct.Inputs[ADO NET Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\llenar DimProducto\DimProduct.Outputs[ADO NET Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\llenar DimProducto\DimProduct.Outputs[ADO NET Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\llenar DimProducto\DimProduct.Outputs[ADO NET Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\llenar DimProducto\DimProduct.Outputs[ADO NET Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\llenar DimProducto\leer product"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server."
+              name="leer product"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement used by the component to extract data."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT
+    p.ProductID,
+    s.CustomerStateID,
+    p.ProductName,
+    p.ProductSKU,
+    p.KitType,
+    p.RetailPrice,
+    s.OrderDate,
+    s.ShipDate,
+	s.Quantity
+FROM
+    dbo.Sales AS s
+JOIN
+    dbo.Product AS p ON s.ProductID = p.ProductID;</property>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">30</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether to allow non-string external columns to be implicitly converted to strings at the output columns."
+                  name="AllowImplicitStringConversion">true</property>
+                <property
+                  dataType="System.String"
+                  description="The Source database table name."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specify the mode to retrieve external column information"
+                  name="AccessMode"
+                  typeConverter="Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter+EnumToStringConverter">2</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.DataReaderSourceAdapter</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\llenar DimProducto\leer product.Connections[IDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[LAPTOP-TI0VVRBR\MSSQLSERVER01.TailspinToys2020-US]"
+                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-TI0VVRBR\MSSQLSERVER01.TailspinToys2020-US]"
+                  description="Managed connection manager"
+                  name="IDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\llenar DimProducto\leer product.Outputs[ADO NET Source Output]"
+                  name="ADO NET Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\llenar DimProducto\leer product.Outputs[ADO NET Source Output].Columns[ProductID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\llenar DimProducto\leer product.Outputs[ADO NET Source Output].ExternalColumns[ProductID]"
+                      lineageId="Package\llenar DimProducto\leer product.Outputs[ADO NET Source Output].Columns[ProductID]"
+                      name="ProductID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\llenar DimProducto\leer product.Outputs[ADO NET Source Output].Columns[CustomerStateID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\llenar DimProducto\leer product.Outputs[ADO NET Source Output].ExternalColumns[CustomerStateID]"
+                      lineageId="Package\llenar DimProducto\leer product.Outputs[ADO NET Source Output].Columns[CustomerStateID]"
+                      name="CustomerStateID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\llenar DimProducto\leer product.Outputs[ADO NET Source Output].Columns[ProductName]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\llenar DimProducto\leer product.Outputs[ADO NET Source Output].ExternalColumns[ProductName]"
+                      length="50"
+                      lineageId="Package\llenar DimProducto\leer product.Outputs[ADO NET Source Output].Columns[ProductName]"
+                      name="ProductName"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\llenar DimProducto\leer product.Outputs[ADO NET Source Output].Columns[ProductSKU]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\llenar DimProducto\leer product.Outputs[ADO NET Source Output].ExternalColumns[ProductSKU]"
+                      length="50"
+                      lineageId="Package\llenar DimProducto\leer product.Outputs[ADO NET Source Output].Columns[ProductSKU]"
+                      name="ProductSKU"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\llenar DimProducto\leer product.Outputs[ADO NET Source Output].Columns[KitType]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\llenar DimProducto\leer product.Outputs[ADO NET Source Output].ExternalColumns[KitType]"
+                      length="3"
+                      lineageId="Package\llenar DimProducto\leer product.Outputs[ADO NET Source Output].Columns[KitType]"
+                      name="KitType"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\llenar DimProducto\leer product.Outputs[ADO NET Source Output].Columns[RetailPrice]"
+                      dataType="cy"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\llenar DimProducto\leer product.Outputs[ADO NET Source Output].ExternalColumns[RetailPrice]"
+                      lineageId="Package\llenar DimProducto\leer product.Outputs[ADO NET Source Output].Columns[RetailPrice]"
+                      name="RetailPrice"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\llenar DimProducto\leer product.Outputs[ADO NET Source Output].Columns[OrderDate]"
+                      dataType="dbDate"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\llenar DimProducto\leer product.Outputs[ADO NET Source Output].ExternalColumns[OrderDate]"
+                      lineageId="Package\llenar DimProducto\leer product.Outputs[ADO NET Source Output].Columns[OrderDate]"
+                      name="OrderDate"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\llenar DimProducto\leer product.Outputs[ADO NET Source Output].Columns[ShipDate]"
+                      dataType="dbDate"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\llenar DimProducto\leer product.Outputs[ADO NET Source Output].ExternalColumns[ShipDate]"
+                      lineageId="Package\llenar DimProducto\leer product.Outputs[ADO NET Source Output].Columns[ShipDate]"
+                      name="ShipDate"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\llenar DimProducto\leer product.Outputs[ADO NET Source Output].Columns[Quantity]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\llenar DimProducto\leer product.Outputs[ADO NET Source Output].ExternalColumns[Quantity]"
+                      lineageId="Package\llenar DimProducto\leer product.Outputs[ADO NET Source Output].Columns[Quantity]"
+                      name="Quantity"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\llenar DimProducto\leer product.Outputs[ADO NET Source Output].ExternalColumns[ProductID]"
+                      dataType="i4"
+                      name="ProductID" />
+                    <externalMetadataColumn
+                      refId="Package\llenar DimProducto\leer product.Outputs[ADO NET Source Output].ExternalColumns[CustomerStateID]"
+                      dataType="i4"
+                      name="CustomerStateID" />
+                    <externalMetadataColumn
+                      refId="Package\llenar DimProducto\leer product.Outputs[ADO NET Source Output].ExternalColumns[ProductName]"
+                      dataType="wstr"
+                      length="50"
+                      name="ProductName" />
+                    <externalMetadataColumn
+                      refId="Package\llenar DimProducto\leer product.Outputs[ADO NET Source Output].ExternalColumns[ProductSKU]"
+                      dataType="wstr"
+                      length="50"
+                      name="ProductSKU" />
+                    <externalMetadataColumn
+                      refId="Package\llenar DimProducto\leer product.Outputs[ADO NET Source Output].ExternalColumns[KitType]"
+                      dataType="wstr"
+                      length="3"
+                      name="KitType" />
+                    <externalMetadataColumn
+                      refId="Package\llenar DimProducto\leer product.Outputs[ADO NET Source Output].ExternalColumns[RetailPrice]"
+                      dataType="cy"
+                      name="RetailPrice" />
+                    <externalMetadataColumn
+                      refId="Package\llenar DimProducto\leer product.Outputs[ADO NET Source Output].ExternalColumns[OrderDate]"
+                      dataType="dbDate"
+                      name="OrderDate" />
+                    <externalMetadataColumn
+                      refId="Package\llenar DimProducto\leer product.Outputs[ADO NET Source Output].ExternalColumns[ShipDate]"
+                      dataType="dbDate"
+                      name="ShipDate" />
+                    <externalMetadataColumn
+                      refId="Package\llenar DimProducto\leer product.Outputs[ADO NET Source Output].ExternalColumns[Quantity]"
+                      dataType="i4"
+                      name="Quantity" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\llenar DimProducto\leer product.Outputs[ADO NET Source Error Output]"
+                  isErrorOut="true"
+                  name="ADO NET Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\llenar DimProducto\leer product.Outputs[ADO NET Source Error Output].Columns[ProductID]"
+                      dataType="i4"
+                      lineageId="Package\llenar DimProducto\leer product.Outputs[ADO NET Source Error Output].Columns[ProductID]"
+                      name="ProductID" />
+                    <outputColumn
+                      refId="Package\llenar DimProducto\leer product.Outputs[ADO NET Source Error Output].Columns[CustomerStateID]"
+                      dataType="i4"
+                      lineageId="Package\llenar DimProducto\leer product.Outputs[ADO NET Source Error Output].Columns[CustomerStateID]"
+                      name="CustomerStateID" />
+                    <outputColumn
+                      refId="Package\llenar DimProducto\leer product.Outputs[ADO NET Source Error Output].Columns[ProductName]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\llenar DimProducto\leer product.Outputs[ADO NET Source Error Output].Columns[ProductName]"
+                      name="ProductName" />
+                    <outputColumn
+                      refId="Package\llenar DimProducto\leer product.Outputs[ADO NET Source Error Output].Columns[ProductSKU]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\llenar DimProducto\leer product.Outputs[ADO NET Source Error Output].Columns[ProductSKU]"
+                      name="ProductSKU" />
+                    <outputColumn
+                      refId="Package\llenar DimProducto\leer product.Outputs[ADO NET Source Error Output].Columns[KitType]"
+                      dataType="wstr"
+                      length="3"
+                      lineageId="Package\llenar DimProducto\leer product.Outputs[ADO NET Source Error Output].Columns[KitType]"
+                      name="KitType" />
+                    <outputColumn
+                      refId="Package\llenar DimProducto\leer product.Outputs[ADO NET Source Error Output].Columns[RetailPrice]"
+                      dataType="cy"
+                      lineageId="Package\llenar DimProducto\leer product.Outputs[ADO NET Source Error Output].Columns[RetailPrice]"
+                      name="RetailPrice" />
+                    <outputColumn
+                      refId="Package\llenar DimProducto\leer product.Outputs[ADO NET Source Error Output].Columns[OrderDate]"
+                      dataType="dbDate"
+                      lineageId="Package\llenar DimProducto\leer product.Outputs[ADO NET Source Error Output].Columns[OrderDate]"
+                      name="OrderDate" />
+                    <outputColumn
+                      refId="Package\llenar DimProducto\leer product.Outputs[ADO NET Source Error Output].Columns[ShipDate]"
+                      dataType="dbDate"
+                      lineageId="Package\llenar DimProducto\leer product.Outputs[ADO NET Source Error Output].Columns[ShipDate]"
+                      name="ShipDate" />
+                    <outputColumn
+                      refId="Package\llenar DimProducto\leer product.Outputs[ADO NET Source Error Output].Columns[Quantity]"
+                      dataType="i4"
+                      lineageId="Package\llenar DimProducto\leer product.Outputs[ADO NET Source Error Output].Columns[Quantity]"
+                      name="Quantity" />
+                    <outputColumn
+                      refId="Package\llenar DimProducto\leer product.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\llenar DimProducto\leer product.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\llenar DimProducto\leer product.Outputs[ADO NET Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\llenar DimProducto\leer product.Outputs[ADO NET Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\llenar DimProducto.Paths[ADO NET Source Output]"
+              endId="Package\llenar DimProducto\DimProduct.Inputs[ADO NET Destination Input]"
+              name="ADO NET Source Output"
+              startId="Package\llenar DimProducto\leer product.Outputs[ADO NET Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{87A410E2-19BF-43FE-B6DB-00DA9D71440B}"
+      DTS:From="Package\Limpiar DimProducto"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\llenar DimProducto" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="173,42"
+          Id="Package\llenar DimProducto"
+          TopLeft="190,152" />
+        <NodeLayout
+          Size="182,42"
+          Id="Package\Limpiar DimProducto"
+          TopLeft="70,20" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="161,62">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="115.5,90"
+              Start="0,0"
+              End="115.5,82.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,41" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,41"
+                    Point2="0,45"
+                    Point3="4,45" />
+                  <mssgle:LineSegment
+                    End="111.5,45" />
+                  <mssgle:CubicBezierSegment
+                    Point1="111.5,45"
+                    Point2="115.5,45"
+                    Point3="115.5,49" />
+                  <mssgle:LineSegment
+                    End="115.5,82.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\llenar DimProducto">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="137,42"
+          Id="Package\llenar DimProducto\leer product"
+          TopLeft="116,53" />
+        <NodeLayout
+          Size="137,42"
+          Id="Package\llenar DimProducto\DimProduct"
+          TopLeft="226,163" />
+        <EdgeLayout
+          Id="Package\llenar DimProducto.Paths[ADO NET Source Output]"
+          TopLeft="184.5,95">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="110,68"
+              Start="0,0"
+              End="110,60.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,30" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,30"
+                    Point2="0,34"
+                    Point3="4,34" />
+                  <mssgle:LineSegment
+                    End="106,34" />
+                  <mssgle:CubicBezierSegment
+                    Point1="106,34"
+                    Point2="110,34"
+                    Point3="110,38" />
+                  <mssgle:LineSegment
+                    End="110,60.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\llenar DimProducto\leer product">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\llenar DimProducto\DimProduct">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

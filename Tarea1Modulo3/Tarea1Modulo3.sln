@@ -7,9 +7,12 @@ Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "Tarea1Modulo3", "Tarea1Modu
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Azure|Default = Azure|Default
 		Development|Default = Development|Default
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ED91C878-46EF-5C7B-7331-ED64F23F3617}.Azure|Default.ActiveCfg = Azure
+		{ED91C878-46EF-5C7B-7331-ED64F23F3617}.Azure|Default.Build.0 = Azure
 		{ED91C878-46EF-5C7B-7331-ED64F23F3617}.Development|Default.ActiveCfg = Development
 		{ED91C878-46EF-5C7B-7331-ED64F23F3617}.Development|Default.Build.0 = Development
 	EndGlobalSection
@@ -17,6 +20,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {2668510B-C2C9-44EE-88F1-46DE0432B890}
+		SolutionGuid = {E4BA8A7D-AA16-4227-8A44-B1E2ED9B163B}
 	EndGlobalSection
 EndGlobal
