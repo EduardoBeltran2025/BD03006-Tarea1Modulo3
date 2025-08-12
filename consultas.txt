@@ -1,0 +1,37 @@
+consulta de DimProduct 
+
+select *from Product p
+left outer join Sales ps 
+on ps.CustomerStateID=p.ProductID
+
+SELECT
+    p.ProductID,
+    s.CustomerStateID,
+    p.ProductName,
+    p.ProductSKU,
+    p.KitType,
+    p.RetailPrice,
+    s.OrderDate,
+    s.ShipDate,
+	s.Quantity
+FROM
+    dbo.Sales AS s
+JOIN
+    dbo.Product AS p ON s.ProductID = p.ProductID;
+
+
+
+conculta para dimensión geografica
+
+SELECT
+    S.StateID,
+    S.StateCode,
+    S.RegionID,
+    S.StateName,
+    PS.OrderDate,
+    PS.ShipDate,
+    PS.CustomerStateID
+FROM
+    State AS S
+LEFT JOIN
+    Sales AS PS ON S.StateID = PS.CustomerStateID;
