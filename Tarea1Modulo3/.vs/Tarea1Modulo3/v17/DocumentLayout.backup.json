@@ -1,22 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\beltr\\Downloads\\Tarea1Modulo3-EQ17001-main\\Tarea1Modulo3\\",
+  "WorkspaceRootPath": "C:\\Users\\beltr\\Documents\\GitHub\\BD03006-Tarea1Modulo3\\Tarea1Modulo3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ED91C878-46EF-5C7B-7331-ED64F23F3617}|Tarea1Modulo3.dtproj|C:\\Users\\beltr\\Downloads\\Tarea1Modulo3-EQ17001-main\\Tarea1Modulo3\\Package1.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
-      "RelativeMoniker": "D:0:0:{ED91C878-46EF-5C7B-7331-ED64F23F3617}|Tarea1Modulo3.dtproj|solutionrelative:Package1.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED91C878-46EF-5C7B-7331-ED64F23F3617}|Tarea1Modulo3.dtproj|C:\\Users\\beltr\\Downloads\\Tarea1Modulo3-EQ17001-main\\Tarea1Modulo3\\DimProduct.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
-      "RelativeMoniker": "D:0:0:{ED91C878-46EF-5C7B-7331-ED64F23F3617}|Tarea1Modulo3.dtproj|solutionrelative:DimProduct.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED91C878-46EF-5C7B-7331-ED64F23F3617}|Tarea1Modulo3.dtproj|C:\\Users\\beltr\\Downloads\\Tarea1Modulo3-EQ17001-main\\Tarea1Modulo3\\DimGeography.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
-      "RelativeMoniker": "D:0:0:{ED91C878-46EF-5C7B-7331-ED64F23F3617}|Tarea1Modulo3.dtproj|solutionrelative:DimGeography.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED91C878-46EF-5C7B-7331-ED64F23F3617}|Tarea1Modulo3.dtproj|C:\\Users\\beltr\\Downloads\\Tarea1Modulo3-EQ17001-main\\Tarea1Modulo3\\DimDate.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
+      "AbsoluteMoniker": "D:0:0:{ED91C878-46EF-5C7B-7331-ED64F23F3617}|Tarea1Modulo3.dtproj|C:\\Users\\beltr\\Documents\\GitHub\\BD03006-Tarea1Modulo3\\Tarea1Modulo3\\DimDate.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
       "RelativeMoniker": "D:0:0:{ED91C878-46EF-5C7B-7331-ED64F23F3617}|Tarea1Modulo3.dtproj|solutionrelative:DimDate.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED91C878-46EF-5C7B-7331-ED64F23F3617}|Tarea1Modulo3.dtproj|C:\\Users\\beltr\\Documents\\GitHub\\BD03006-Tarea1Modulo3\\Tarea1Modulo3\\DimDates.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
+      "RelativeMoniker": "D:0:0:{ED91C878-46EF-5C7B-7331-ED64F23F3617}|Tarea1Modulo3.dtproj|solutionrelative:DimDates.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED91C878-46EF-5C7B-7331-ED64F23F3617}|Tarea1Modulo3.dtproj|C:\\Users\\beltr\\Documents\\GitHub\\BD03006-Tarea1Modulo3\\Tarea1Modulo3\\DimProducto.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
+      "RelativeMoniker": "D:0:0:{ED91C878-46EF-5C7B-7331-ED64F23F3617}|Tarea1Modulo3.dtproj|solutionrelative:DimProducto.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED91C878-46EF-5C7B-7331-ED64F23F3617}|Tarea1Modulo3.dtproj|C:\\Users\\beltr\\Documents\\GitHub\\BD03006-Tarea1Modulo3\\Tarea1Modulo3\\DimGeography.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
+      "RelativeMoniker": "D:0:0:{ED91C878-46EF-5C7B-7331-ED64F23F3617}|Tarea1Modulo3.dtproj|solutionrelative:DimGeography.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,15 +26,27 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
+              "Title": "DimDates.dtsx [Design]",
+              "DocumentMoniker": "C:\\Users\\beltr\\Documents\\GitHub\\BD03006-Tarea1Modulo3\\Tarea1Modulo3\\DimDates.dtsx",
+              "RelativeDocumentMoniker": "DimDates.dtsx",
+              "ToolTip": "C:\\Users\\beltr\\Documents\\GitHub\\BD03006-Tarea1Modulo3\\Tarea1Modulo3\\DimDates.dtsx [Design]",
+              "RelativeToolTip": "DimDates.dtsx [Design]",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFTSURBVDhPY2QAgqUbD/8H0bjAu49fGG7fvZ8\u002BqTFrFlQIAv7/h\u002BgDGfDv71\u002BcePKi7f9NPZP/59VPSwNrQAJMUJogaK0pZDh\u002B6uxMdEOINqC6pR9MgwwBM6CABUqDQcWCa1AWA0NHghac//k9G0NcZAiYvWj5GjANAxgu\u002BC2rAcYwAGJz6NkxZEe7QUVQAYYBrI9vgDEMwPhffkEFsAFCsfDp\u002B9//D98jYgOqDQwIBiLI5vc/GBjefP/PwMLGARVFABQDQIEGwyCArPnNdwaGf1iSG85ARNb8\u002BhsDwweQAb\u002BBAmgAZyAia371lYHh7MnrDI9/yzA4hhQwlM29/J/BeCbYPSjpABT3MJvf//jP8BZoK4j95TfE7SD5hy\u002B\u002BMFy5846hCyyCZMDUpbugLFxABq75zPU3UDGoAaDchp7C0AHI6TDNyAaAszNRAOpnFHA2nREAjMTvHMVXB8cAAAAASUVORK5CYII=",
+              "WhenOpened": "2025-08-12T03:50:50.258Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "DimGeography.dtsx [Design]",
-              "DocumentMoniker": "C:\\Users\\beltr\\Downloads\\Tarea1Modulo3-EQ17001-main\\Tarea1Modulo3\\DimGeography.dtsx",
+              "DocumentMoniker": "C:\\Users\\beltr\\Documents\\GitHub\\BD03006-Tarea1Modulo3\\Tarea1Modulo3\\DimGeography.dtsx",
               "RelativeDocumentMoniker": "DimGeography.dtsx",
-              "ToolTip": "C:\\Users\\beltr\\Downloads\\Tarea1Modulo3-EQ17001-main\\Tarea1Modulo3\\DimGeography.dtsx [Design]",
+              "ToolTip": "C:\\Users\\beltr\\Documents\\GitHub\\BD03006-Tarea1Modulo3\\Tarea1Modulo3\\DimGeography.dtsx [Design]",
               "RelativeToolTip": "DimGeography.dtsx [Design]",
               "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFTSURBVDhPY2QAgqUbD/8H0bjAu49fGG7fvZ8\u002BqTFrFlQIAv7/h\u002BgDGfDv71\u002BcePKi7f9NPZP/59VPSwNrQAJMUJogaK0pZDh\u002B6uxMdEOINqC6pR9MgwwBM6CABUqDQcWCa1AWA0NHghac//k9G0NcZAiYvWj5GjANAxgu\u002BC2rAcYwAGJz6NkxZEe7QUVQAYYBrI9vgDEMwPhffkEFsAFCsfDp\u002B9//D98jYgOqDQwIBiLI5vc/GBjefP/PwMLGARVFABQDQIEGwyCArPnNdwaGf1iSG85ARNb8\u002BhsDwweQAb\u002BBAmgAZyAia371lYHh7MnrDI9/yzA4hhQwlM29/J/BeCbYPSjpABT3MJvf//jP8BZoK4j95TfE7SD5hy\u002B\u002BMFy5846hCyyCZMDUpbugLFxABq75zPU3UDGoAaDchp7C0AHI6TDNyAaAszNRAOpnFHA2nREAjMTvHMVXB8cAAAAASUVORK5CYII=",
               "WhenOpened": "2025-08-11T04:46:41.695Z",
@@ -42,36 +54,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DimProduct.dtsx [Design]",
-              "DocumentMoniker": "C:\\Users\\beltr\\Downloads\\Tarea1Modulo3-EQ17001-main\\Tarea1Modulo3\\DimProduct.dtsx",
-              "RelativeDocumentMoniker": "DimProduct.dtsx",
-              "ToolTip": "C:\\Users\\beltr\\Downloads\\Tarea1Modulo3-EQ17001-main\\Tarea1Modulo3\\DimProduct.dtsx [Design]",
-              "RelativeToolTip": "DimProduct.dtsx [Design]",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFTSURBVDhPY2QAgqUbD/8H0bjAu49fGG7fvZ8\u002BqTFrFlQIAv7/h\u002BgDGfDv71\u002BcePKi7f9NPZP/59VPSwNrQAJMUJogaK0pZDh\u002B6uxMdEOINqC6pR9MgwwBM6CABUqDQcWCa1AWA0NHghac//k9G0NcZAiYvWj5GjANAxgu\u002BC2rAcYwAGJz6NkxZEe7QUVQAYYBrI9vgDEMwPhffkEFsAFCsfDp\u002B9//D98jYgOqDQwIBiLI5vc/GBjefP/PwMLGARVFABQDQIEGwyCArPnNdwaGf1iSG85ARNb8\u002BhsDwweQAb\u002BBAmgAZyAia371lYHh7MnrDI9/yzA4hhQwlM29/J/BeCbYPSjpABT3MJvf//jP8BZoK4j95TfE7SD5hy\u002B\u002BMFy5846hCyyCZMDUpbugLFxABq75zPU3UDGoAaDchp7C0AHI6TDNyAaAszNRAOpnFHA2nREAjMTvHMVXB8cAAAAASUVORK5CYII=",
-              "WhenOpened": "2025-08-11T04:22:32.373Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Package1.dtsx [Design]",
-              "DocumentMoniker": "C:\\Users\\beltr\\Downloads\\Tarea1Modulo3-EQ17001-main\\Tarea1Modulo3\\Package1.dtsx",
-              "RelativeDocumentMoniker": "Package1.dtsx",
-              "ToolTip": "C:\\Users\\beltr\\Downloads\\Tarea1Modulo3-EQ17001-main\\Tarea1Modulo3\\Package1.dtsx [Design]",
-              "RelativeToolTip": "Package1.dtsx [Design]",
+              "DocumentIndex": 2,
+              "Title": "DimProducto.dtsx [Design]",
+              "DocumentMoniker": "C:\\Users\\beltr\\Documents\\GitHub\\BD03006-Tarea1Modulo3\\Tarea1Modulo3\\DimProducto.dtsx",
+              "RelativeDocumentMoniker": "DimProducto.dtsx",
+              "ToolTip": "C:\\Users\\beltr\\Documents\\GitHub\\BD03006-Tarea1Modulo3\\Tarea1Modulo3\\DimProducto.dtsx [Design]",
+              "RelativeToolTip": "DimProducto.dtsx [Design]",
               "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFTSURBVDhPY2QAgqUbD/8H0bjAu49fGG7fvZ8\u002BqTFrFlQIAv7/h\u002BgDGfDv71\u002BcePKi7f9NPZP/59VPSwNrQAJMUJogaK0pZDh\u002B6uxMdEOINqC6pR9MgwwBM6CABUqDQcWCa1AWA0NHghac//k9G0NcZAiYvWj5GjANAxgu\u002BC2rAcYwAGJz6NkxZEe7QUVQAYYBrI9vgDEMwPhffkEFsAFCsfDp\u002B9//D98jYgOqDQwIBiLI5vc/GBjefP/PwMLGARVFABQDQIEGwyCArPnNdwaGf1iSG85ARNb8\u002BhsDwweQAb\u002BBAmgAZyAia371lYHh7MnrDI9/yzA4hhQwlM29/J/BeCbYPSjpABT3MJvf//jP8BZoK4j95TfE7SD5hy\u002B\u002BMFy5846hCyyCZMDUpbugLFxABq75zPU3UDGoAaDchp7C0AHI6TDNyAaAszNRAOpnFHA2nREAjMTvHMVXB8cAAAAASUVORK5CYII=",
               "WhenOpened": "2025-08-11T03:59:47.541Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "DimDate.dtsx [Design]",
-              "DocumentMoniker": "C:\\Users\\beltr\\Downloads\\Tarea1Modulo3-EQ17001-main\\Tarea1Modulo3\\DimDate.dtsx",
+              "DocumentMoniker": "C:\\Users\\beltr\\Documents\\GitHub\\BD03006-Tarea1Modulo3\\Tarea1Modulo3\\DimDate.dtsx",
               "RelativeDocumentMoniker": "DimDate.dtsx",
-              "ToolTip": "C:\\Users\\beltr\\Downloads\\Tarea1Modulo3-EQ17001-main\\Tarea1Modulo3\\DimDate.dtsx [Design]*",
-              "RelativeToolTip": "DimDate.dtsx [Design]*",
+              "ToolTip": "C:\\Users\\beltr\\Documents\\GitHub\\BD03006-Tarea1Modulo3\\Tarea1Modulo3\\DimDate.dtsx [Design]",
+              "RelativeToolTip": "DimDate.dtsx [Design]",
               "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFTSURBVDhPY2QAgqUbD/8H0bjAu49fGG7fvZ8\u002BqTFrFlQIAv7/h\u002BgDGfDv71\u002BcePKi7f9NPZP/59VPSwNrQAJMUJogaK0pZDh\u002B6uxMdEOINqC6pR9MgwwBM6CABUqDQcWCa1AWA0NHghac//k9G0NcZAiYvWj5GjANAxgu\u002BC2rAcYwAGJz6NkxZEe7QUVQAYYBrI9vgDEMwPhffkEFsAFCsfDp\u002B9//D98jYgOqDQwIBiLI5vc/GBjefP/PwMLGARVFABQDQIEGwyCArPnNdwaGf1iSG85ARNb8\u002BhsDwweQAb\u002BBAmgAZyAia371lYHh7MnrDI9/yzA4hhQwlM29/J/BeCbYPSjpABT3MJvf//jP8BZoK4j95TfE7SD5hy\u002B\u002BMFy5846hCyyCZMDUpbugLFxABq75zPU3UDGoAaDchp7C0AHI6TDNyAaAszNRAOpnFHA2nREAjMTvHMVXB8cAAAAASUVORK5CYII=",
               "WhenOpened": "2025-08-08T02:01:46.154Z",
               "EditorCaption": " [Design]"
